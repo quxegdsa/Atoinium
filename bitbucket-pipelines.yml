@@ -1,0 +1,28 @@
+image: hashicorp/terraform:latest
+
+pipelines:
+  default:
+    - step:
+        name: Terraform Init
+        caches:
+          - terraform
+        script:
+          - terraform init
+    - step:
+        name: Terraform Plan
+        caches:
+          - terraform
+        script:
+          - terraform plan -out=tfplan
+          - cat tfplan
+        artifacts:
+          - tfplan
+    - step:
+        name: Terraform Apply
+        deployment: production
+        script:
+          - terraform apply -auto-approve tfplan
+
+definitions:
+  caches:
+    terraform: ~/.terraform.d/plugins

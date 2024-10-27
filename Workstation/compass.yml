@@ -1,0 +1,19 @@
+name: Atoinium_software
+id: "ari:cloud:compass:06f7fbef-d3aa-482b-b667-97dc1d793450:component/fd3a406b-8bdf-4b87-82bd-9f2bcb970002/b00bc834-4b74-4b82-b4b4-bf6d8a709bc4"
+description: Med
+configVersion: 1
+typeId: SERVICE
+ownerId: null
+fields:
+  tier: 3
+links: []
+relationships:
+  DEPENDS_ON:
+    - "ari:cloud:compass:06f7fbef-d3aa-482b-b667-97dc1d793450:component/fd3a406b-8bdf-4b87-82bd-9f2bcb970002/78c4dd75-776b-4ec4-ba9e-39d8a7ef8e6d"
+    - "ari:cloud:compass:06f7fbef-d3aa-482b-b667-97dc1d793450:component/fd3a406b-8bdf-4b87-82bd-9f2bcb970002/937f3212-068a-490c-a14f-84976921db5a"
+    - "ari:cloud:compass:06f7fbef-d3aa-482b-b667-97dc1d793450:component/fd3a406b-8bdf-4b87-82bd-9f2bcb970002/8cff2144-f1e8-434d-a959-7623c02e0888"
+labels:
+  - synced-with-jsm
+customFields: null
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-yml-format

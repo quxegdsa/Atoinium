@@ -1,0 +1,13 @@
+[build]
+  base = "/"
+  command = "npm run build"
+  publish = "build"
+  environment = {NODE_VERSION = "20"}
+
+[build.cache]
+  paths = ["node_modules", "public", ".cache"]
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
