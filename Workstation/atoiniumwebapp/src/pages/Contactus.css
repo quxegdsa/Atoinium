@@ -1,0 +1,87 @@
+/* Contactus.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main h2 {
+    color: #333;
+  }
+  
+  main p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

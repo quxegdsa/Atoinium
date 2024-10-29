@@ -1,0 +1,16 @@
+/* homepage.css */
+
+.homepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  padding: 20px;
+}
+
+.list-group-item {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,51 @@
+/* UserAccount.css */
+
+.signin-container,
+.signup-container,
+.signout-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.signin-container h2,
+.signup-container h2,
+.signout-container h2 {
+  color: #333;
+}
+
+.signin-container form label,
+.signup-container form label,
+.signout-container form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.signin-container form input,
+.signup-container form input,
+.signout-container form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.signin-container form button,
+.signup-container form button,
+.signout-container form button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.signin-container form button:hover,
+.signup-container form button:hover,
+.signout-container form button:hover {
+  background-color: #555;
+}
