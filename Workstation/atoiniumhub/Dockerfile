@@ -1,5 +1,5 @@
 
-FROM python:3.9-slim
+FROM python:3.14.0a1-slim
 
 
 RUN apt-get update && apt-get install -y \
