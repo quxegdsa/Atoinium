@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: atoinium
+  namespace: atoiniumhpc
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: atoinium
+  template:
+    metadata:
+      labels:
+        app: atoinium
+    spec:
+      containers:
+        - name: atoinium
+          image: atoiniumhpc
+          ports:
+            - containerPort: 8080
