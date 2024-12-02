@@ -27,20 +27,18 @@ services:
       context: ./atoiniumhpc
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8081:8080"  # Change the host port to 8081
     volumes:
       - ./data:/data  # Mount the ./data directory on the host to /data in the container
 
   db:
     image: postgres:latest
     environment:
-      POSTGRES_DB: your_db_name
-      POSTGRES_USER: your_db_user
-      POSTGRES_PASSWORD: your_db_password
+      POSTGRES_DB: atoinium_db
+      POSTGRES_USER: guxegdsa
+      POSTGRES_PASSWORD: F?*RTAGl6
     ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - "5433:5432"
 
 volumes:
   postgres_data:

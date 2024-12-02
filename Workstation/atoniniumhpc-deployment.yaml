@@ -14,7 +14,14 @@ spec:
         app: atoinium
     spec:
       containers:
-        - name: atoinium
-          image: atoiniumhpc
+        - name: atoinium-github
+          image: ofidohubvm/atoinium_atoiniumhpc:latest
           ports:
             - containerPort: 8080
+        - name: atoinium-gitlab
+          image: registry.gitlab.com/guxegdsa/atoinium:latest
+          ports:
+            - containerPort: 8081
+      imagePullSecrets:
+        - name: github-regcred
+        - name: gitlab-regcred
