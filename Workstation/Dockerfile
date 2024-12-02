@@ -7,14 +7,14 @@ COPY atoiniumwebapp/ ./
 RUN npm run build
 
 # Stage 2: Build Python backend
-FROM python:3.9 AS backend-builder
+FROM python:3.9-slim AS backend-builder
 WORKDIR /app/backend
 COPY atoiniumhpc/requirements.txt ./
 RUN pip install --default-timeout=100 -r requirements.txt
 COPY atoiniumhpc/ ./
 
 # Stage 3: Combine frontend and backend
-FROM python:3.9
+FROM python:3.9-slim
 WORKDIR /app
 COPY --from=frontend-builder /app/frontend/build ./frontend/build
 COPY --from=backend-builder /app/backend ./

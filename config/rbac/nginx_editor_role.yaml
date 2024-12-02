@@ -1,0 +1,27 @@
+# permissions for end users to edit nginxes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: atoinium
+    app.kubernetes.io/managed-by: kustomize
+  name: nginx-editor-role
+rules:
+- apiGroups:
+  - atoiniumhpcgroup.thera.atonixcorp.com
+  resources:
+  - nginxes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - atoiniumhpcgroup.thera.atonixcorp.com
+  resources:
+  - nginxes/status
+  verbs:
+  - get

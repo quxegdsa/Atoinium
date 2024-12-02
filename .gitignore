@@ -18,6 +18,13 @@
 .env.test.local
 .env.production.local
 
+# environment
+/.env
+/myenv
+/qiskit-env
+/.env.local
+/qiskit_runtime_guxegdsa.ipynb
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -25,4 +32,4 @@ yarn-error.log*
 node_modules/
 .cache/
 logs/
-*.log
+*.log/

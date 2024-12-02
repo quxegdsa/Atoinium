@@ -1,0 +1,23 @@
+# permissions for end users to view nginxes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: atoinium
+    app.kubernetes.io/managed-by: kustomize
+  name: nginx-viewer-role
+rules:
+- apiGroups:
+  - atoiniumhpcgroup.thera.atonixcorp.com
+  resources:
+  - nginxes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - atoiniumhpcgroup.thera.atonixcorp.com
+  resources:
+  - nginxes/status
+  verbs:
+  - get

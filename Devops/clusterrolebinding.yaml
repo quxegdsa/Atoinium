@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: atoinium-operator-rolebinding
+subjects:
+  - kind: ServiceAccount
+    name: pipeline
+    namespace: samdavin-dev
+roleRef:
+  kind: ClusterRole
+  name: atoinium-operator-role
+  apiGroup: rbac.authorization.k8s.io
