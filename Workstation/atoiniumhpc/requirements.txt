@@ -1,8 +1,6 @@
-numpy
 pandas
 scipy
 djangorestframework
-scipy
 scikit-learn
 matplotlib
 seaborn
@@ -13,21 +11,19 @@ psycopg2-binary
 gunicorn
 qiskit
 biopython
-scikit-bio
 qutip
 pennylane
-
 django-cors-headers
 Django>=3.2,<4.0
 djangorestframework
 channels
+numpy
 celery
 django-celery-beat
 django-celery-results
 django-allauth
 django-debug-toolbar
 django-extensions
-django-filter
 django-cacheops
 django-guardian
 django-two-factor-auth
@@ -36,4 +32,3 @@ factory_boy
 coverage
 django-storages
 django-environ
-gunicorn
