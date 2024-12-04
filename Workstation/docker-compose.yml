@@ -11,25 +11,14 @@ services:
     depends_on:
       - db
 
-  frontend:
-    build:
-      context: ./atoiniumwebapp
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./atoiniumwebapp:/app
-    depends_on:
-      - backend
-
   atoiniumhpc:
     build:
       context: ./atoiniumhpc
       dockerfile: Dockerfile
     ports:
-      - "8081:8080"  # Change the host port to 8081
+      - "8081:8080"
     volumes:
-      - ./data:/data  # Mount the ./data directory on the host to /data in the container
+      - ./data:/data
 
   db:
     image: postgres:latest
@@ -39,6 +28,19 @@ services:
       POSTGRES_PASSWORD: F?*RTAGl6
     ports:
       - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  therapeutics:
+    build:
+      context: ./therapeutics
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./therapeutics:/app
+    depends_on:
+      - backend
 
 volumes:
   postgres_data:

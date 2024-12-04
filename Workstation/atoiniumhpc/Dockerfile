@@ -1,5 +1,5 @@
 # Stage 1: Build Python backend
-FROM python:3.9
+FROM python:3.9-slim 
 WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --default-timeout=100 -r requirements.txt
