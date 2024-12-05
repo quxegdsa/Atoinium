@@ -1,0 +1,10 @@
+/* src/HeroSection.css */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-section .container {
+    max-width: 800px;
+}

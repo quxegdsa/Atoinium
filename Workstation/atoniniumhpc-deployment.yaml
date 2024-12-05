@@ -18,6 +18,10 @@ spec:
           image: ofidohubvm/atoinium_atoiniumhpc:latest
           ports:
             - containerPort: 8080
+        - name: therapeutics-container
+          image: ofidohubvm/atoinium_therapeutics:latest
+          ports:
+            - containerPort: 8081
       imagePullSecrets:
         - name: github-regcred
         - name: gitlab-regcred
