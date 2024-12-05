@@ -15,12 +15,12 @@
 
 .logo img {
     max-width: 50px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 h1 {
     font-size: 1.5rem;
-    margin: 0;
+    margin: 10;
 }
 
 .right-section {
