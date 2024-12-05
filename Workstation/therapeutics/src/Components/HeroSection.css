@@ -1,5 +1,6 @@
 /* src/HeroSection.css */
 .hero-section {
+    background-image: url('/backgroundherosection.png');
     background-size: cover;
     background-position: center;
     color: white;
