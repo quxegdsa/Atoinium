@@ -1,0 +1,35 @@
+/* src/HomePage.css */
+.HomePage {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+ul li strong {
+    color: #2c3e50;
+}
