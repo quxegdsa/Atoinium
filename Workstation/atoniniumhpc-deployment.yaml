@@ -20,4 +20,4 @@ spec:
             - containerPort: 8080
       imagePullSecrets:
         - name: github-regcred
-        - name: gitlab-regcred
+        
